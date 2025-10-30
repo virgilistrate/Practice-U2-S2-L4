@@ -1,0 +1,15 @@
+@import "./scss/functions";
+
+@import "./scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+$new-font-sizes: (
+  7: 0.8rem,
+  8: 0.6rem,
+  9: 0.4rem,
+  10: 0.3rem,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+@import "./scss/bootstrap.scss";
